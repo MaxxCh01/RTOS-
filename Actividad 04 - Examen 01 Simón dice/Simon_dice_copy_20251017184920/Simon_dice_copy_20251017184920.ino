@@ -1,3 +1,13 @@
+/*
+  Actividad 04 - Examen 01 Simón dice
+
+  Programa que implementa el juego "Simón dice" en un ESP32 utilizando FreeRTOS. 
+  El sistema genera secuencias aleatorias de teclas mostradas en una pantalla OLED, 
+  que el usuario debe repetir usando un teclado matricial. Se emplean semáforos y 
+  mutex para sincronizar las tareas de generación de secuencia y captura de entrada, 
+  controlando turnos, validación y reinicio del juego en caso de error.
+*/
+
 #include <Arduino.h>
 #include <Keypad.h>
 #include <Adafruit_GFX.h>
