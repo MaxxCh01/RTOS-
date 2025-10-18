@@ -1,4 +1,11 @@
+/*
+  Actividad 02 - Semáforo solo con temporizadores
 
+  Programa que simula el funcionamiento de un semáforo utilizando únicamente temporizadores 
+  de FreeRTOS. Cada color (rojo, verde y amarillo) se controla mediante un temporizador que 
+  define su tiempo de encendido. El LED amarillo parpadea tres veces antes de volver al rojo, 
+  creando un ciclo continuo sin usar tareas, solo con temporización.
+*/
 
 #if CONFIG_FREERTOS_UNICORE
   static const BaseType_t app_cpu = 0;
@@ -85,3 +92,4 @@ void startAmarillo(TimerHandle_t xTimer) {
     xTimerStart(timerRojo, 0);
   }
 }
+
