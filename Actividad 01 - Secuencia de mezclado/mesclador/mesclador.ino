@@ -1,3 +1,12 @@
+/*
+  Actividad 01 - Secuencia de mezclado
+
+  Programa que simula un sistema de mezclado con FreeRTOS. Usa tareas para controlar 
+  el llenado y vaciado de una cabina según el peso medido por una báscula. Los botones 
+  aumentan el peso, la compuerta se abre al llegar a 100 kg y luego la cabina se drena, 
+  mostrando cada etapa con LEDs indicadores.
+*/
+
 //configuracion de nucleos para utilizar
 #if CONFIG_FREERTOS_UNICORE
   static const BaseType_t app_cpu = 0;
