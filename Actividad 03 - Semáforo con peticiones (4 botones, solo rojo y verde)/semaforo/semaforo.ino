@@ -1,3 +1,13 @@
+/*
+  Actividad 03 - Semáforo con peticiones (4 botones, solo rojo y verde)
+
+  Programa que simula dos semáforos controlados por botones y sensores, gestionados 
+  mediante tareas y semáforos de FreeRTOS. Cada botón solicita el paso para su 
+  semáforo (rojo/verde) y los sensores determinan cuándo liberar el control. 
+  Si un semáforo está ocupado, el otro queda en espera hasta que el primero termine, 
+  garantizando acceso ordenado y sin conflictos.
+*/
+
 #if CONFIG_FREERTOS_UNICORE
   static const BaseType_t app_cpu = 0;
 #else
