@@ -1,3 +1,3 @@
 # RTOS-
-Maximiliano Chiquito Chiquito
+Maximiliano Chiquito Chiquito;
 Bryan Salas Rivas
